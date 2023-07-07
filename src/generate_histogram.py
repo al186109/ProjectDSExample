@@ -1,7 +1,8 @@
 # src/generate_figures.py
 import pandas as pd
 import matplotlib.pyplot as plt
-import helpers.DataLoader as dtl #dlt = DataLoader
+import help.DL as dtl #dlt = DataLoader
+
 
 
 def plot_histogram(df, column, output_path):

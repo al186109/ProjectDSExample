@@ -3,8 +3,14 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn import preprocessing
-import helpers.DataLoader as dtl #Importamos nuestra clase DataLoader com dtl
-
+#import helpers.DataLoader as dtl #Importamos nuestra clase DataLoader com dtl
+#from src.helpers.DataLoader import Dataloader as dtl
+#from src.helpers import DataLoader as dtl
+#from ...src.helpers.DataLoader import DataLoader as dtl
+#from  ..helpers.DataLoader import DataLoader as dtl
+#@from ..help.DL import Dataloader 
+#from src.help.DL import Dataloader as dtl
+from src.help import DL as dtl #dlt = DataLoader
 # Leer los datos
 reader = dtl.Dataloader("./data/processed/RH_procesado.csv")
 df = reader.load_data()

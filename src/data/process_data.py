@@ -1,5 +1,5 @@
 import pandas as pd
-import helpers.DataLoader as dtl #Importamos la clase DataLoader
+from src.help import DL as dlt #Importamos la clase DataLoader
 
 # Ruta del archivo de datos en bruto
 input_filepath = "./data/raw/RH_bruto.csv"
@@ -8,10 +8,10 @@ input_filepath = "./data/raw/RH_bruto.csv"
 output_filepath = "./data/processed/RH_procesado.csv"
 
 # Leer los datos brutos usando un objeto llamado reader
-reader = dtl.Dataloader(input_filepath)
+reader = dlt.Dataloader(input_filepath)
 df = reader.load_data()
 
-# Rellenar los valores faltantes
+# Rellenar los valores faltantes0
 # Para 'Años_En_Empresa', 'Ingreso_Mensual', 'Evaluacion_Desempeño', y 'Nivel_Satisfaccion'
 # vamos a usar la media de cada columna
 for column in [
