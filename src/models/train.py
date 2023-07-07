@@ -25,6 +25,8 @@ y = df["Desercion"]
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
+print(X_train) #informacion utilizada para entrenar el modelo, el cual es obtenida a traves del archivo csv
+print(y_train) #Columna que muestra la prediccion de desercion.
 
 # Entrenar un modelo de Random Forest
 clf = RandomForestClassifier()
